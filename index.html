@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash M</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" ></script>
+    <script src="https://kit.fontawesome.com/7e705f1c61.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@250;300;400;500;700&display=swap');
+        </style>
+</head>
+<body>
+    <!--nav bar--->
+<nav>
+<div class="max-width">
+    
+    <div class="logo"><a href="#home">Prakash M</a></div>
+    <div class="menu">
+        <ul class="nav-ul" id="nav" >
+        <li><a href="#home" title="Home" onclick="menu()">Home</a></li>
+        <li><a href="#about" title="About" onclick="menu()">About</a></li>
+        <li><a href="#skills" title="Skills" onclick="menu()">Skills</a></li>
+        <li><a href="#contact" title="Contact" onclick="menu()">Contact</a></li>
+        <li><a onclick="menu()"><i onclick="darktheme()" class="far fa-moon" id="icon" title="theme change"></i></a></li>
+    </ul>
+    </div>
+    <input type="checkbox" id="cck">
+    <label for="cck" class="check-btn">
+        <i class="fas fa-bars" onclick="menu()"></i>
+    </label>
+</div>
+</nav>
+   <!--home --->
+   <section class="home" id="home">
+       <div class="max-width">
+           <div class="home-content">
+       <div class="intro">
+           <h1>Hello, My Name is</h1>
+           <h2> PRAKASH</h2>
+        <h3>And I'm a <span>  Web Developer</span></h3>
+        <div class="contact-me">
+           <a class="contact-button" href="#contact">Contact Me<i class="far fa-paper-plane"></i></a>
+            <a  class="download-btn" href="Resume.pdf" download >Download Resume<i class="fas fa-arrow-down"></i></a>
+
+        </div>
+            <div class="social">
+                <h4>Also Connect Me with here - </h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/prakash-mariappan-949b7a210/"  title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/prakashmariappan" title="Github"><i class="fab fa-github"></i></a></li> 
+                <li><a href="https://www.facebook.com/profile.php?id=100014761931892" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/PrakashMariapp5"  title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/prakash_m__/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                
+            </ul>
+            </div>
+    </div>
+       <div class="home-image"><img src="images\home.png" alt=""></div>
+    </div>
+   </div>
+</section>
+
+    <!--about--->
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <h2 class="headingabout" > About Me</h2>
+                <h3 class="subheadabout">what I do</h3>
+            <div class="about-column">
+                <div class="column-left">
+                    <img src="images\about.jpg" alt="">
+                </div>
+                <div class="column-middle"></div>
+                <div class="column-right">
+                    <h1>Prakash</h1>
+                    <h2>Web Developer</h2>
+                    <p>Quick Learner, creating user-friendly Web Designs and Websites, producing responsive sites for all devices at Good Quality and Attractive Effects.</p>                                   
+                </div>
+                 </div>
+                </div>
+        </div>
+    </section>
+    <!--skills--->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <div class="skills-content">
+                <h2 class="heading">Skills</h2>
+                <h3 class="sub-head">what I known</h3>
+                <div class="skills-column">
+                    <div class="skills-card front-end">
+                        <img class="card-img " src="images\frontend.png" alt="">
+                        <div class="dropdown">
+                            <button onclick="frontend()"  class="card-button">Front End
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="frontend-content" id="frontdw">
+                                <div class="dd-head">HTML
+                                    <div class="dd">
+                                        <div class="html head-line">
+                                            <div class="percentage">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                              <div class="dd-head">CSS
+                                <div class="dd">
+                                    <div class="css head-line">
+                                        <div class="percentage">70%</div>
+                                    </div>
+                                </div>
+                              </div>  
+                                <div class="dd-head">JS
+                                    <div class="dd">
+                                        <div class="js head-line">
+                                            <div class="percentage">65%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dd-head last" >REACT JS
+                                    
+                                            <div class="wordings">Curently Learning</div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-card back-end">
+                        <img class="card-img backend-img" src="images\backend.png" alt="">
+                        <div class="dropdown">
+                            <button onclick="backend()" class="card-button" >Back End
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div id="backdw" class="backend-content">
+                                <div class="dd-head last">
+                                    <div class="wordings">I am Curently Learning Back End<br>I'll soon Update it's Progress </div>
+                        </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact--->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="heading">Contact</h2>
+            <h3 class="sub-head">Get in Touch</h3>
+            <div class="contact-content">
+                    <div class="contact-cards">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2 class="contact-heading">Location</h2>
+                        <div class="wordings location">14/7, Pavalar Street,<br>JK Patti, Bodinayakanur,<br>Theni(District)- 625513</div>
+                    </div>
+                    <div class="contact-cards">
+                        <i class="fas fa-phone-alt"></i>
+                        <h2 class="contact-heading">Phone</h2>
+                        <div class="wordings phone">+91 7402112145</div>
+                    </div>
+                    <div class="contact-cards">
+                        <i class="fas fa-envelope"></i>
+                        <h2 class="contact-heading">Mail</h2>
+                        <div class="wordings mail">prakashmariappan09@gmail.com</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+<!--Footer-->
+<section class="footer">
+    <div class="max-width">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="section">
+                    <h2 class="category-title">Sections</h2>
+                    <ul>
+                        <li><a class="category-a" href="#home" title="Home">Home</a></li>
+                        <li><a class="category-a" href="#about" title="About">About</a></li>
+                        <li><a class="category-a" href="#skills" title="Skills">Skills</a></li>
+                        <li><a class="category-a" href="#contact" title="Contact">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="contact-footer">
+                    <h2 class="category-title">Contact Me</h2>
+                    <div class="contact-box" title="maild id">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">prakashmariappan09@gmail.com</div>
+                    </div>
+                    <div class="contact-box" title="mobile number">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-info">+91 7402112145</div>
+                    </div>
+                   
+                </div>
+                <div class="follow">
+                    <h2 class="category-title">Follow Me On</h2>
+                    <ul>
+                        
+                        <li><a href="https://www.facebook.com/profile.php?id=100014761931892" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/PrakashMariapp5" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/prakash_m__/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/prakash-mariappan-949b7a210/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li> 
+                        <li><a href="https://github.com/prakashmariappan" title="Github"><i class="fab fa-github git"></i></a></li> 
+                    </ul>
+                </div>
+            </div>
+            <p class="end">Created By <span> Prakash M</span> | All Copyrights Reserved</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
